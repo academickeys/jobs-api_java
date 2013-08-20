@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<API>
+	<Session>
+		<APIUsername>your username</APIUsername>
+		<APIKey>your password</APIKey>
+	</Session>
+	<Request type="JobAdd">
+		<Job>
+			<APIIdentifier></APIIdentifier>                                     <!-- This is YOUR JobID (if you have one) -->
+			
+			<!-- This is one of: Administration, Agriculture, Business, Community Colleges, Curriculum & Education, Dentistry, Engineering, Fine Arts, Health Sciences, Humanities, Law, Medicine, Pharmacy, Sciences, Social Sciences, Staff & Non-Managerial Professionals, Veterinary Medicine -->
+			<Discipline>Engineering</Discipline>                                <!-- Required -->
+			
+			<Organization></Organization>                                       <!-- The university name, required -->
+			<OrganizationDescription></OrganizationDescription>
+			<Department></Department>                                           <!-- The department name, required -->
+			<DepartmentDescription></DepartmentDescription>
+			<Title></Title>                                                     <!-- The job title, required -->
+			<Description></Description>
+			<EOAAPolicy></EOAAPolicy>
+			<Location>
+				<City></City>
+				<State></State>
+				<Country></Country>
+			</Location>
+			<Contact>
+				<Organization></Organization>
+				<Department></Department>
+				<Name></Name>
+			</Contact>
+			<PositionStartDescription></PositionStartDescription>               <!-- e.g. "October 30, 2012", "Immediately", etc. -->
+			<PositionDeadlineDescription></PositionDeadlineDescription>         <!-- e.g. "October 30, 2012", "Open until filled", etc. -->
+			<ApplyUrl></ApplyUrl>
+			<AcceptEmail></AcceptEmail>
+			
+			<ContractRef>                                                       <!-- Required -->
+				
+				<!-- If Berkeley College purchased an unlimited posting package, you will always pass a single static ContractID value here -->
+				<ContractID>25030</ContractID>
+			
+				<!-- If they DO NOT purchase an unlimited posting package, I will provide you with a list of valid posting options -->
+				<PostingOptionID>81</PostingOptionID>
+				
+				<PONumber></PONumber>                                           <!-- If there is a PO/IO # you can pass that here, optional -->
+			</ContractRef>
+			
+			<FieldList>
+				<Field>Mechanical Engineering</Field>                           <!-- This field may repeat -->
+			</FieldList>
+			
+			<CategoryList>
+				<Category>Associate Professor</Category>                        <!-- This field may repeat -->
+			</CategoryList>
+			
+			<TrackingUrl></TrackingUrl>                                         <!-- For tracking pixels/images -->
+			<TrackingScript></TrackingScript>                                   <!-- For tracking JavaScript code -->
+			<ExpireDate></ExpireDate>
+			<Notes></Notes>
+		</Job>
+	</Request>
+</API>

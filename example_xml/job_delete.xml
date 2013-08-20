@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<API>
+	<Session>
+		<APIUsername>your username here</APIUsername>
+		<APIKey>your password here</APIKey>
+	</Session>
+	<Request type="JobDelete">
+		<Job>
+			<JobID>27591</JobID>	<!-- This is the Academic Keys JobID value -->
+		</Job>
+	</Request>
+</API>
