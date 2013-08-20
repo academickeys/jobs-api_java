@@ -6,9 +6,9 @@ import javax.net.ssl.*;
 
 public class AKTest {
 
-	protected static String _username = "peopleadmin";
-	protected static String _password = "DKTtfJDoFeLUSddJ";
-	protected static String _endpoint = "http://engineering.dev-academickeys.com/api/server/v1";
+	protected static String _username = "";
+	protected static String _password = "";
+	protected static String _endpoint = "";
 	
 	/**
 	 * @param args
